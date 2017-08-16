@@ -1,0 +1,8 @@
+exports.handler = function(event, context) {
+    console.log("the event is ",event);
+    var host = "https://" +"www."+event.host || "https://facebook.com";
+     var destination_url = host;
+    content = "<html><body>Moved: <a href=\"" + destination_url + "\">" + destination_url + "</a></body></html>";
+		context.succeed({ "destination_url": destination_url, "content": content });
+    
+};

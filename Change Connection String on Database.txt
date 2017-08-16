@@ -1,0 +1,3 @@
+Update [AdminConfiguration].[ClientAppUrls] 
+SET PrivateConnectionString='Data Source=cs2-api-rds.cerlojff0gtw.us-west-2.rds.amazonaws.com,1433;Initial Catalog=CS2-Stage-Database;Persist Security Info=True;User ID=DirectScaleUser;Password=Direct!Scale$1;Pooling=False'
+Where  EnvironmentId=2

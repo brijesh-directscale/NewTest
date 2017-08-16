@@ -1,0 +1,2 @@
+redis-cli -h cs2-api-rediscache.redis.cache.windows.net -p 6379 -a WXQARWtaPVGEMNRo2MttW9CA8N/f+KYGzrXwyhRjVfk=
+redis-cli flushall

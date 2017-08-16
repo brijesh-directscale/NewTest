@@ -1,0 +1,28 @@
+$dbuser='';
+$dbpass='';
+$basepath='';
+$dbname='ACN WordPress MySql Database Server';
+$dbserver=acn-wordpress-rds.cerlojff0gtw.us-west-2.rds.amazonaws.com';
+$dbport='3306';
+$dbtype='mysql';
+
+
+
+---New---DS AWS Account--
+https://ec2-52-42-100-115.us-west-2.compute.amazonaws.com:10000/ -New-ACN-live.1
+
+https://ec2-52-24-211-118.us-west-2.compute.amazonaws.com:10000/ New-ACN-Dev
+
+https://ec2-52-32-129-97.us-west-2.compute.amazonaws.com:10000/ New-ACN-Stage
+
+
+--Common for All--jeff's account----
+
+https://ec2-54-172-66-148.compute-1.amazonaws.com:10000/ old-common-live.1
+
+Username  :- wpwebmin
+Password  :- DXV%QFnCZZ46
+-----------------------------------------------------------------------
+
+https://ec2-52-23-187-206.compute-1.amazonaws.com:10000/ old-common-dev
+

@@ -1,0 +1,30 @@
+exec msdb.dbo.rds_backup_database 
+        @source_db_name='database_name', 
+        @s3_arn_to_backup_to='arn:aws:s3:::bucket_name/file_name_and_extension',
+        @overwrite_S3_backup_file=1;
+
+
+--------------------------------------------------------------------------
+
+
+exec msdb.dbo.rds_restore_database
+       @restore_db_name='DirectsScale',
+       @s3_arn_to_restore_from='arn:aws:s3:::corp-west/DirectScale20170317.bak';
+	   
+	   
+	   exec msdb.dbo.rds_backup_database 
+        @source_db_name='DirectsScale', 
+        @s3_arn_to_backup_to='arn:aws:s3:::corp-west/DirectScale20170316.bak',
+        @overwrite_S3_backup_file=1;
+		
+		
+		
+	exec msdb.dbo.rds_backup_database
+       @source_db_name='DirectScale',
+       @s3_arn_to_backup_to='arn:aws:s3:::wsi-clients/RDS/Backups/DirectScale03152017.bak';
+	   
+	   
+	   
+	   --exec msdb.dbo.rds_restore_database
+ --      @restore_db_name='YoungevityImport',
+ --      @s3_arn_to_restore_from='arn:aws:s3:::wsi-clients/RDS/Backups/YoungevityImport.bak';
